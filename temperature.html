@@ -1,0 +1,58 @@
+<!----4. Create a temperature converter page      
+(5 marks) 
+(5 marks) 
+(5 marks) 
+(5 marks) 
+(20 marks) 
+Create a page that converts temperature between Fahrenheit, Celsius, and Kelvin. The user 
+selects an input, and it converts to the other two automatically. 
+• User can select the input temperature.     
+• Conversion from Fahrenheit to Celsius and Kelvin    
+• Conversion from Celsius to Fahrenheit and Kelvin.    
+• Conversion from Kelvin to Fahrenheit and Celsius. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navBar">
+            <a href="index.html">Profile Page</a>
+            <a href="gradeConvert.html">Grade Converter</a>
+            <a href="staff.html">Staff Page</a>
+            <a href="temperature.html">Temperature Converter</a>
+        </nav>
+    </header>
+
+    <main class="converter">
+        <h1>Temperature Converter</h1>
+        <label for="inputValue">Enter Temperature:</label>
+        <input type="number" id="inputValue" placeholder="Enter value">
+
+        <label for="scale">Select Scale:</label>
+        <select id="scale">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+
+        <div class="result">
+            <p id="output1"></p>
+            <p id="output2"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Carol Iantas - <span id="current_date"></span></p>
+    </footer>
+</body>
+
+</html>

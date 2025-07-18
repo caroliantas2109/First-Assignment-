@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Page</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-----
+3. Create a staff page          
+Create a page that displays the staff information with sorting capability by name and salary. 
+Sample staff data will be provided to you. Do not add or remove entries from the list. 
+You can implement different solutions. All working attempts will be considered right. 
+• Staff data is correctly displayed.      
+• CSS is properly applied and there’s clear distinction between items. 
+• Sorting by name works and can be toggled ascending or descending. 
+• Sorting by salary works and can be toggled ascending or descending. 
+-->
+    <header>
+        <nav id="navBar">
+            <a href="index.html">Profile Page</a>
+            <a href="gradeConvert.html">Grade Converter</a>
+            <a href="staff.html">Staff Page</a>
+            <a href="temperature.html">Temperature Converter</a>
+        </nav>
+    </header>
+
+    <h1> Staff information </h1>
+
+    <div class="sort_buttons">
+        <button onclick="sortByName()"> Sort by Name </button>
+        <button onclick="sortBySalary()"> Sort by Salary </button>
+    </div>
+
+    <div class="table_container">
+        <table id="staff_table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Ext.</th>
+                    <th>Start Date</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; Carol Iantas - <span id="current_date"></span></p>
+    </footer>
+
+</body>

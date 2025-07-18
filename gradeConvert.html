@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark to Grade Converter</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-----2. Build a Mark to Grade converter page
+    • The MarkToGrade function scrapes the student mark out of the mark-input-box element and verifies it is realistic.
+    • A mark must be numerical, nonnegative, and less or equal to 100.
+    •  If an invalid mark is entered, it displays a message back to the user in the validation message element.
+    • Messages should be informative. Return as many different messages as you can to guide the user what kind of erroneous value was entered.
+    The correct grade is displayed. Use these values to convert grades:  
+    • A: grade ≥ 90 
+    • B: 80 ≤ grade < 90 
+    • C: 70 ≤ grade < 80 
+    • D: 60 ≤ grade < 70 
+    • E: 50 ≤ grade < 60 
+    • F: grade < 50
+    -->
+    <header>
+        <nav id="navBar">
+            <a href="index.html">Profile Page</a>
+            <a href="gradeConvert.html">Grade Converter</a>
+            <a href="staff.html">Staff Page</a>
+            <a href="temperature.html">Temperature Converter</a>
+        </nav>
+    </header>
+
+
+    <h1> Grade Converter </h1>
+
+    <label for="mark_input_box"> Enter your grade (0-100): </label>
+    <input type="text" id="mark_input_box">
+
+    <button onclick="markToGrade()"> Convert </button>
+
+    <p id="validation_message_grade"></p>
+    <p id="grade_result"></p>
+    <footer>
+        <p>&copy; Carol Iantas - <span id="current_date"></span></p>
+    </footer>
+</body>
+
+</html>

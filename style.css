@@ -1,0 +1,15 @@
+*{
+    background-color: rgb(249, 196, 204);
+    color: rgb(153, 111, 55);
+    font-style: italic;
+    font-size:large;
+}
+
+#sakura_flower {
+    width: 450px;
+    height: auto;
+    display: none;
+    border-radius: 10px;
+    margin-top: 30px; 
+}
+
